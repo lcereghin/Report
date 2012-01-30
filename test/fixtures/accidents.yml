@@ -1,0 +1,37 @@
+one:
+  report_number: MyString
+  date_of_injury: MyString
+  employee_name: MyString
+  location: MyString
+  employee_job: MyString
+  reported_to_insurance_carrier: MyString
+  claim_number: MyString
+  monies_paid_: MyString
+  type_of_incident: MyString
+  time_of_incident: MyString
+  supervisor_when_accident_occurred: MyString
+  drug_screen: false
+  lost_time_: false
+  days_of_lost_time: MyString
+  previous_accidents: MyString
+  file_status: MyString
+  notes: MyText
+
+two:
+  report_number: MyString
+  date_of_injury: MyString
+  employee_name: MyString
+  location: MyString
+  employee_job: MyString
+  reported_to_insurance_carrier: MyString
+  claim_number: MyString
+  monies_paid_: MyString
+  type_of_incident: MyString
+  time_of_incident: MyString
+  supervisor_when_accident_occurred: MyString
+  drug_screen: false
+  lost_time_: false
+  days_of_lost_time: MyString
+  previous_accidents: MyString
+  file_status: MyString
+  notes: MyText

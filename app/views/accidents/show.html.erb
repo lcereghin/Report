@@ -1,0 +1,76 @@
+<% title "Accident" %>
+
+<p>
+  <strong>Report Number:</strong>
+  <%= @accident.report_number %>
+</p>
+<p>
+  <strong>Date Of Injury:</strong>
+  <%= @accident.date_of_injury %>
+</p>
+<p>
+  <strong>Employee Name:</strong>
+  <%= @accident.employee_name %>
+</p>
+<p>
+  <strong>Location:</strong>
+  <%= @accident.location %>
+</p>
+<p>
+  <strong>Employee Job:</strong>
+  <%= @accident.employee_job %>
+</p>
+<p>
+  <strong>Reported To Insurance Carrier:</strong>
+  <%= @accident.reported_to_insurance_carrier %>
+</p>
+<p>
+  <strong>Claim Number:</strong>
+  <%= @accident.claim_number %>
+</p>
+<p>
+  <strong>Monies Paid :</strong>
+  <%= @accident.monies_paid_ %>
+</p>
+<p>
+  <strong>Type Of Incident:</strong>
+  <%= @accident.type_of_incident %>
+</p>
+<p>
+  <strong>Time Of Incident:</strong>
+  <%= @accident.time_of_incident %>
+</p>
+<p>
+  <strong>Supervisor When Accident Occurred:</strong>
+  <%= @accident.supervisor_when_accident_occurred %>
+</p>
+<p>
+  <strong>Drug Screen:</strong>
+  <%= @accident.drug_screen %>
+</p>
+<p>
+  <strong>Lost Time :</strong>
+  <%= @accident.lost_time_ %>
+</p>
+<p>
+  <strong>Days Of Lost Time:</strong>
+  <%= @accident.days_of_lost_time %>
+</p>
+<p>
+  <strong>Previous Accidents:</strong>
+  <%= @accident.previous_accidents %>
+</p>
+<p>
+  <strong>File Status:</strong>
+  <%= @accident.file_status %>
+</p>
+<p>
+  <strong>Notes:</strong>
+  <%= @accident.notes %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_accident_path(@accident) %> |
+  <%= link_to "Destroy", @accident, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", accidents_path %>
+</p>
