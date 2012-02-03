@@ -1,6 +1,6 @@
  ActiveAdmin::Dashboards.build do
 
-    section "Recent Bad Accidents" do  
+    section "Recent Accidents" do  
       table_for Accident.order("date_of_injury DESC").limit(10) do  
       column :date_of_injury
       column :employee_name

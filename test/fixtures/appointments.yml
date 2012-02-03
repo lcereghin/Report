@@ -1,0 +1,17 @@
+one:
+  accident_id: 1
+  date: 2012-02-03
+  time: 2012-02-03 00:30:48
+  location_name: MyString
+  type_of_reminder_id: 1
+  manager_id: 1
+  notes: MyText
+
+two:
+  accident_id: 1
+  date: 2012-02-03
+  time: 2012-02-03 00:30:48
+  location_name: MyString
+  type_of_reminder_id: 1
+  manager_id: 1
+  notes: MyText

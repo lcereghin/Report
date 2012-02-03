@@ -1,4 +1,10 @@
 Report::Application.routes.draw do
+  resources :appointments
+
+  resources :type_of_reminders
+
+  resources :managers
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config

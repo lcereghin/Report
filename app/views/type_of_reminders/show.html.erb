@@ -1,0 +1,12 @@
+<% title "Type Of Reminder" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @type_of_reminder.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_type_of_reminder_path(@type_of_reminder) %> |
+  <%= link_to "Destroy", @type_of_reminder, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", type_of_reminders_path %>
+</p>

@@ -11,11 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120119090119) do
+ActiveRecord::Schema.define(:version => 20120203063048) do
 
   create_table "accidents", :force => true do |t|
     t.string   "report_number"
-    t.date   "date_of_injury"
+    t.date     "date_of_injury"
     t.string   "employee_name"
     t.string   "location"
     t.string   "employee_job"
@@ -67,5 +67,30 @@ ActiveRecord::Schema.define(:version => 20120119090119) do
 
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
   add_index "admin_users", ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
+
+  create_table "appointments", :force => true do |t|
+    t.integer  "accident_id"
+    t.date     "date"
+    t.datetime "time"
+    t.string   "location_name"
+    t.integer  "type_of_reminder_id"
+    t.integer  "manager_id"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "managers", :force => true do |t|
+    t.string   "name"
+    t.string   "email_address"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "type_of_reminders", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

@@ -1,0 +1,19 @@
+<% title "Managers" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email Address</th>
+  </tr>
+  <% for manager in @managers %>
+    <tr>
+      <td><%= manager.name %></td>
+      <td><%= manager.email_address %></td>
+      <td><%= link_to "Show", manager %></td>
+      <td><%= link_to "Edit", edit_manager_path(manager) %></td>
+      <td><%= link_to "Destroy", manager, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Manager", new_manager_path %></p>

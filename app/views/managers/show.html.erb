@@ -1,0 +1,16 @@
+<% title "Manager" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @manager.name %>
+</p>
+<p>
+  <strong>Email Address:</strong>
+  <%= @manager.email_address %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_manager_path(@manager) %> |
+  <%= link_to "Destroy", @manager, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", managers_path %>
+</p>

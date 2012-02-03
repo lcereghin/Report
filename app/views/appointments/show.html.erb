@@ -1,0 +1,36 @@
+<% title "Appointment" %>
+
+<p>
+  <strong>Accident:</strong>
+  <%= @appointment.accident_id %>
+</p>
+<p>
+  <strong>Date:</strong>
+  <%= @appointment.date %>
+</p>
+<p>
+  <strong>Time:</strong>
+  <%= @appointment.time %>
+</p>
+<p>
+  <strong>Location Name:</strong>
+  <%= @appointment.location_name %>
+</p>
+<p>
+  <strong>Type Of Reminder:</strong>
+  <%= @appointment.type_of_reminder_id %>
+</p>
+<p>
+  <strong>Manager:</strong>
+  <%= @appointment.manager_id %>
+</p>
+<p>
+  <strong>Notes:</strong>
+  <%= @appointment.notes %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_appointment_path(@appointment) %> |
+  <%= link_to "Destroy", @appointment, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", appointments_path %>
+</p>

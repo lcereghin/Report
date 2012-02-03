@@ -1,0 +1,32 @@
+<%= form_for @appointment do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :accident_id %><br />
+    <%= f.number_field :accident_id %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.label :time %><br />
+    <%= f.datetime_select :time %>
+  </p>
+  <p>
+    <%= f.label :location_name %><br />
+    <%= f.text_field :location_name %>
+  </p>
+  <p>
+    <%= f.label :type_of_reminder_id %><br />
+    <%= f.number_field :type_of_reminder_id %>
+  </p>
+  <p>
+    <%= f.label :manager_id %><br />
+    <%= f.number_field :manager_id %>
+  </p>
+  <p>
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
