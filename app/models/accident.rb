@@ -7,4 +7,7 @@ scope :PHX, where(:location => "PHX")
 scope :IAH_A_F, where(:location => "IAH-A/F")
 scope :IAH_SHOP, where(:location => "IAH-SHOP")
 scope :filestatus_open, where(:file_status => "Open")
+def display_name
+   "#{employee_name}"
+ end
 end
