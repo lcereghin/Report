@@ -19,5 +19,17 @@ ActiveAdmin.register Accident, :as => "Accident Reports" do
           column :file_status
           column :notes
 
-    end   
+    end  
+    csv do
+               column :date_of_injury
+               column :employee_name 
+               column :location
+               column :employee_job
+               column :type_of_incident
+               column :monies_paid_
+               column :supervisor_when_accident_occurred
+               column :previous_accidents
+               column :notes
+
+         end 
 end
