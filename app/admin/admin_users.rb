@@ -1,4 +1,7 @@
 ActiveAdmin.register AdminUser do
+  
+  menu :if => proc{ can?(:manage, AdminUser) }     
+    controller.authorize_resource
   index do
         column :email
         column :current_sign_in_at
@@ -10,6 +13,7 @@ ActiveAdmin.register AdminUser do
        form do |f|
          f.inputs "Admin Details" do
            f.input :email
+           f.input :role, :as => :radio, :collection => AdminUser::ROLES
          end
          f.buttons
        end
