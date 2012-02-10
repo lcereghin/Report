@@ -8,7 +8,11 @@ class Ability
           can :manage, :all
         when "Manager"
           #can :manage, AdminUser   
-          cannot [:destroy], AdminUser   
+          cannot [:destroy], AdminUser
+          can :manage, Appointment
+          cannot [:destroy], Appointment 
+          can :manage, Accident_Reports
+          cannot [:destroy], Accident_Reports  
           can :update, AdminUser, :id => user.id
         end
     end

@@ -1,4 +1,5 @@
 ActiveAdmin.register Appointment do
+  controller.authorize_resource
   menu :parent => "Appointments"
   
   index do
