@@ -10,9 +10,7 @@ class Ability
           #can :manage, AdminUser   
           cannot [:destroy], AdminUser
           can :manage, Appointment
-          cannot [:destroy], Appointment 
-          can :manage, Accident_Reports
-          cannot [:destroy], Accident_Reports  
+          cannot [:destroy], Appointment
           can :update, AdminUser, :id => user.id
         end
     end
