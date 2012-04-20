@@ -3,13 +3,11 @@ gem 'rails', '3.1.1'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
+gem 'sqlite3', :group => :developmentont 
 gem 'pg'
 gem "cancan"
 gem 'formtastic'
-group :development do
-gem 'sqlite3'
-end
+
 gem "nifty-generators", :group => :development
 gem 'activeadmin'
   gem 'sass-rails',   '~> 3.1.4'

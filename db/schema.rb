@@ -11,28 +11,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120210184853) do
+ActiveRecord::Schema.define(:version => 20120420174853) do
 
   create_table "accidents", :force => true do |t|
-    t.string    "report_number"
-    t.date      "date_of_injury"
-    t.string    "employee_name"
-    t.string    "location"
-    t.string    "employee_job"
-    t.string    "reported_to_insurance_carrier"
-    t.string    "claim_number"
-    t.string    "monies_paid_"
-    t.string    "type_of_incident"
-    t.string    "time_of_incident"
-    t.string    "supervisor_when_accident_occurred"
-    t.boolean   "drug_screen"
-    t.boolean   "lost_time_"
-    t.string    "days_of_lost_time"
-    t.string    "previous_accidents"
-    t.string    "file_status"
-    t.text      "notes"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
+    t.string   "report_number"
+    t.date     "date_of_injury"
+    t.string   "employee_name"
+    t.string   "location"
+    t.string   "employee_job"
+    t.string   "reported_to_insurance_carrier"
+    t.string   "claim_number"
+    t.string   "monies_paid_"
+    t.string   "type_of_incident"
+    t.string   "time_of_incident"
+    t.string   "supervisor_when_accident_occurred"
+    t.boolean  "drug_screen"
+    t.boolean  "lost_time_"
+    t.string   "days_of_lost_time"
+    t.string   "previous_accidents"
+    t.string   "file_status"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.text     "claims_rep"
   end
 
   create_table "active_admin_comments", :force => true do |t|
@@ -70,15 +71,15 @@ ActiveRecord::Schema.define(:version => 20120210184853) do
   add_index "admin_users", ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
 
   create_table "appointments", :force => true do |t|
-    t.integer   "accident_id"
-    t.date      "date"
-    t.timestamp "time"
-    t.string    "location_name"
-    t.integer   "type_of_reminder_id"
-    t.integer   "manager_id"
-    t.text      "notes"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
+    t.integer  "accident_id"
+    t.date     "date"
+    t.datetime "time"
+    t.string   "location_name"
+    t.integer  "type_of_reminder_id"
+    t.integer  "manager_id"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "managers", :force => true do |t|
